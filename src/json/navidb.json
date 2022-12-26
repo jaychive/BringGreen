@@ -1,0 +1,24 @@
+{
+  "naviDB": [
+    {
+      "naviText": "NEW",
+      "naviLink": "#new"
+    },
+    {
+      "naviText": "BRAND",
+      "naviLink": "#brand"
+    },
+    {
+      "naviText": "PLUS+",
+      "naviLink": "#plus"
+    },
+    {
+      "naviText": "EVENTS",
+      "naviLink": "#event1"
+    },
+    {
+      "naviText": "OTHERS",
+      "naviLink": "#others"
+    }
+  ]
+}

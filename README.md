@@ -5,4 +5,5 @@
 ## 20221226
 * scrollSpy 네비게이션 연결 완료
 * 로고 세팅
-* 재사용 컴포넌트(Btn.js, EventTitle.js, Title.js) props 이용하여 세팅
+* 재사용 컴포넌트(Btn.js, EventTitle.js, Title.js 등) DB용 json 파일 제작 후 props 이용하여 세팅
+* npm v9.2.0로 업데이트

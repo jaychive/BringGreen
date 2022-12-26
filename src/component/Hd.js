@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-import Logo from '../component-nonuse/Logo';
 import Bringlogo from '../img/logo-black.png'
 import Navi from './Navi';
 
@@ -48,7 +47,6 @@ function Header(props) {
                   fixed-top ">
       <h1 className="mb-0">
         <a href="#top" className="d-block">
-          {/* <Logo></Logo> */}
           <img src={Bringlogo} className="img-fluid w-100" alt="logo" />
         </a>
       </h1>

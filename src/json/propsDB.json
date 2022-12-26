@@ -12,7 +12,7 @@
 
   "brandDB":{
     "btnContent":"제품보기",
-    "btnColor":"white",
+    "btnColor":"dark",
     "btnLink":"#others",
     "btnTarget":""
   },

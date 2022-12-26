@@ -156,6 +156,7 @@ li {
 
 section {
     height: 100vh;
+    margin-top: 45px;
 }
 
 .titleSpace {
@@ -175,5 +176,13 @@ section {
 
     .eventTitle {
         font-size: 3rem;
+    }
+}
+
+.youtubeDiv {
+    height: 0;
+    padding-top: 56%;
+    iframe {
+        top: 0; left: 0; bottom: 0; right: 0;
     }
 }

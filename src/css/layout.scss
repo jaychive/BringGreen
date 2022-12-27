@@ -156,7 +156,30 @@ li {
 
 section {
     height: 100vh;
-    margin-top: 45px;
+}
+
+#main {
+    .mainImg {
+        background: url('../../public/img/compImg/main1.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100vh;
+        z-index: 0;
+
+        .mainContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+
+            .imgBox {
+                width: 55rem;
+                margin: 0 auto;
+            }
+
+        }
+    }
 }
 
 .titleSpace {
@@ -166,6 +189,7 @@ section {
 
 .eventSpace {
     padding-top: 7rem;
+
     .eventStrong {
         font-size: 4rem;
     }
@@ -182,7 +206,11 @@ section {
 .youtubeDiv {
     height: 0;
     padding-top: 56%;
+
     iframe {
-        top: 0; left: 0; bottom: 0; right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
     }
 }

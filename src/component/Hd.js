@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-import Bringlogo from '../img/logo-black.png'
 import Navi from './Navi';
 
 
@@ -47,7 +46,7 @@ function Header(props) {
                   fixed-top ">
       <h1 className="mb-0">
         <a href="#top" className="d-block">
-          <img src={Bringlogo} className="img-fluid w-100" alt="logo" />
+          <img src="/img/seo/logo-black.png" className="img-fluid w-100" alt="logo" />
         </a>
       </h1>
       <button className='btn d-md-none' id="allMenu" onClick={e => {

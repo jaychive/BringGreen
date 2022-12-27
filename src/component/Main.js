@@ -4,6 +4,7 @@ import Btn from './reusable/Btn';
 function Main(props) {
   return (
     <section>
+      
       <Btn type={props.sort}></Btn>
     </section>
   );

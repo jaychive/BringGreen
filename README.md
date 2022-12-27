@@ -6,4 +6,7 @@
 * scrollSpy 네비게이션 연결 완료
 * 로고 세팅
 * 재사용 컴포넌트(Btn.js, EventTitle.js, Title.js 등) DB용 json 파일 제작 후 props 이용하여 세팅
-* npm v9.2.0로 업데이트
+* youtube iframe 삽입
+
+## 20221227
+* 이미지 파일 img 폴더에 삽입

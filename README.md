@@ -10,3 +10,8 @@
 
 ## 20221227
 * 이미지 파일 img 폴더에 삽입
+
+## 20221228
+* 이미지 추가
+* Main, Brand, Review, Event1에 컨텐츠 삽입 완료
+* Products 컴포넌트 Swiper 삽입 => 이슈 발생

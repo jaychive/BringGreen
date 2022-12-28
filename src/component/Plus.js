@@ -3,7 +3,7 @@ import Title from './reusable/Title';
 
 function Plus(props) {
   return (
-    <section id='plus'>
+    <section id='plus' className='sectionSpace'>
       <Title type={props.sort}></Title>
     </section>
   );

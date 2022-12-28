@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import Navi from './Navi';
 
+import navDB from '../json/navidb.json';
+
 
 function Header(props) {
 
@@ -43,7 +45,7 @@ function Header(props) {
     <header ref={targetRef} id="hd" className="App-header d-flex justify-content-between align-items-center flex-row px-lg-5 py-2 fixed-top ">
       <h1 className="mb-0">
         <a href="#top" className="d-block">
-          <img src="/img/seo/logo-black.png" className="img-fluid w-100" alt="logo" />
+          <img src="/img/seo/logo-black.png" className="img-fluid w-100 px-3" alt="logo" />
         </a>
       </h1>
       <button className='btn d-md-none' id="allMenu" onClick={e => {
@@ -52,6 +54,16 @@ function Header(props) {
       }} >햄버거</button>
 
       <Navi cls={isMobile ? 'mobileNavi' : ''} toggle={naviOpen ? 'on' : ''} />
+      
+      <ul className='d-md-flex ps-0 mb-0 d-none'>
+        {
+          navDB.quickDB.map(function (value, index){
+            return(
+              <li className='quickIcon' key={value[0]+index}><a href={value[2]} target="_blank" rel="noreferrer noopener"><i className={value[1]}></i><span className="visually-hidden">{value[0]}</span></a></li>
+            )
+          })
+        }
+      </ul>
     </header>
   )
 }

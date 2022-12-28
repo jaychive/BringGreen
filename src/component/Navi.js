@@ -8,11 +8,9 @@ function Navi(props){
         {
           naviDb.map((item, index) =>{
             return(
-              <li id={ 'naivID'+index } key={ 'naivID'+index } ><a href={item.naviLink} className="text-decoration-none ps-md-5 pe-md-0 px-5">{item.naviText}</a></li>
+              <li id={ 'naivID'+index } key={ 'naivID'+index } ><a href={item.naviLink} className="text-decoration-none text-center px-4">{item.naviText}</a></li>
             )
-          }
-          )
-            
+          })
         }
       </Scrollspy>
     )

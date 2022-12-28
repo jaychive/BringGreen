@@ -1,8 +1,3 @@
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-
 import Header from './component/Hd';
 import Main from './component/Main';
 import New from './component/New';
@@ -11,7 +6,7 @@ import Review from './component/Review';
 import Plus from './component/Plus';
 import EventOne from './component/EventOne';
 import EventTwo from './component/EventTwo';
-import { Products } from './component/Products';
+import Products from './component/Products';
 
 
 

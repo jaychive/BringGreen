@@ -31,9 +31,9 @@ const Footer = () =>{
   return(
     <footer className="py-5 border-top">
       <ul className="d-flex justify-content-center">
-        <li><a href="">git</a></li>
-        <li><a href="">instagram</a></li>
-        <li><a href="">notion</a></li>
+        <li><a href="#none">git</a></li>
+        <li><a href="#none">instagram</a></li>
+        <li><a href="#none">notion</a></li>
       </ul>
     </footer>
   )

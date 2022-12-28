@@ -15,3 +15,5 @@
 * 이미지 추가
 * Main, Brand, Review, Event1에 컨텐츠 삽입 완료
 * Products 컴포넌트 Swiper 삽입 => 이슈 발생
+(추가)
+* New, Plus에 컨텐츠 삽입 완료

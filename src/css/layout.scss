@@ -253,6 +253,18 @@ li {
     }
 }
 
+#plus {
+    .dotCircle {
+        width: 16rem;
+        height: 16rem;
+        border: 5px dotted #114b1e;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 .quickIcon {
     padding: 0 1rem;
 

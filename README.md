@@ -18,3 +18,7 @@
 
 (추가)
 * New, Plus에 컨텐츠 삽입 완료
+
+## 20221229
+* Swiper 이슈 해결 (ProdSwiper.js 컴포넌트 생성하여 Swiper 분리)
+* Btn에 css hover 세팅

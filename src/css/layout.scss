@@ -1,5 +1,5 @@
 * {
-    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Pretendard', sans-serif;
     font-weight: 300;
     letter-spacing: -0.083em;
 }
@@ -13,12 +13,14 @@ li {
 }
 
 #root {
+    --swiper-theme-color: #105220;
+
     a {
         color: black
     }
 
     a:hover {
-        color: rgb(16, 82, 32);
+        color: #105220;
     }
 
     h1 {
@@ -113,43 +115,6 @@ li {
 
     }
 
-    // .workSection {
-        // .swiper-wrapper {
-        //     .swiper-slide {
-        //         // min-height: calc(100vh - 120px);
-        //         display: flex;
-        //         flex-direction: column;
-        //         justify-content: center;
-        //         align-items: center;
-        //     }
-
-        //     // .react {
-        //     //     background: url(https://img.cjthemarket.com/images/file/display/586/20221122103138241.jpg?RS=1920x500) no-repeat center;
-        //     //     background-size: cover;
-        //     //     color: white;
-
-        //     //     @media (max-width:768px) {
-        //     //         background-image: url(https://img.cjthemarket.com/images/file/display/084/20220901181851256.png?RS=1920x500);
-
-        //     //     }
-        //     // }
-
-        //     .boot {}
-        // }
-
-        // .swiper-scrollbar-horizontal {
-        //     height: 2px;
-        //     bottom: 0;
-        //     left: 0;
-        //     right: 0;
-        //     width: 100%;
-        // }
-    // }
-
-    // .section {
-    //     height: calc(100vh - 120px);
-    //     min-height: 800px;
-    // }
 }
 
 // jay customize
@@ -163,7 +128,7 @@ li {
     @media (max-width: 48rem) {
         width: 80vw;
     }
-    width: 55vw;
+    width: 40vw;
 }
 
 .titleSpace {
@@ -212,6 +177,11 @@ li {
             align-items: center;
             position: relative;
             z-index: 2;
+
+            .reusableBtn a:hover {
+                background-color: #105220;
+                color: white !important;
+            }
         }
     }
 }
@@ -241,7 +211,14 @@ li {
         .brandContent {
             position: relative;
             z-index: 2;
+
+            .reusableBtn a:hover {
+                background-color: #ffffff;
+                color: black !important;
+            }
         }
+
+        
     }
 }
 
@@ -257,11 +234,43 @@ li {
     .dotCircle {
         width: 16rem;
         height: 16rem;
-        border: 5px dotted #114b1e;
+        border: 5px dotted #105220;
         border-radius: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+}
+
+.swiper {
+    overflow: hidden;
+    padding: 50px 35px !important;
+    .swiper-wrapper {
+        display: flex;
+        .swiper-slide { 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 15rem;
+            }
+        }
+    }
+    .swiper-scrollbar-horizontal {
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+}
+
+#others {
+    .reusableBtn a:hover {
+        background-color: #105220;
+        color: white !important;
     }
 }
 

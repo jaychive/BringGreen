@@ -45,7 +45,7 @@ function Header(props) {
     <header ref={targetRef} id="hd" className="App-header d-flex justify-content-between align-items-center flex-row px-lg-5 py-2 fixed-top ">
       <h1 className="mb-0">
         <a href="#top" className="d-block">
-          <img src="/img/seo/logo-black.png" className="img-fluid w-100 px-3" alt="logo" />
+          <img src="/img/seo/logo-black.png" className="img-fluid w-100" alt="logo" />
         </a>
       </h1>
       <button className='btn d-md-none' id="allMenu" onClick={e => {

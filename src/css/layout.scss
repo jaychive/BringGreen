@@ -1,13 +1,29 @@
 * {
     font-family: 'Pretendard', sans-serif;
     font-weight: 300;
-    letter-spacing: -0.083em;
+    // letter-spacing: -0.083em;
 }
 
 li {
     list-style: none;
 }
 
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+strong {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
 .h100vh {
     height: 100vh;
 }
@@ -120,20 +136,21 @@ li {
 // jay customize
 
 .sectionSpace {
-    padding-top: 64px;
+    padding-top: 48px;
     height: 100vh;
 }
 
 .logoImgBox {
+    width: 40vw;
     @media (max-width: 48rem) {
         width: 80vw;
     }
-    width: 40vw;
 }
 
 .titleSpace {
     font-size: 3rem;
     padding-top: 3rem;
+    font-weight: 900;
 }
 
 .eventSpace {
@@ -149,7 +166,12 @@ li {
 
     .eventTitle {
         font-size: 3rem;
+        font-weight: 900;
     }
+}
+
+.descPhr {
+    font-size: 1rem
 }
 
 #main {
@@ -161,14 +183,17 @@ li {
         height: 100vh;
         position: relative;
         z-index: 0;
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0; width: 100%;
-        left: 0; height: 100%;
-        background-color: rgba(255,255,255,0.7);
-        z-index: 1;
-    }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            left: 0;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.7);
+            z-index: 1;
+        }
 
         .mainContent {
             display: flex;
@@ -178,6 +203,16 @@ li {
             position: relative;
             z-index: 2;
 
+            p {
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+
+            strong {
+                font-size: 2rem;
+                font-weight: 600;
+            }
+
             .reusableBtn a:hover {
                 background-color: #105220;
                 color: white !important;
@@ -186,40 +221,60 @@ li {
     }
 }
 
-#brand{
-    .brandImg {
-        background-image: url('../../public/img/compImg/brand1.jpg');
-        background-repeat: no-repeat;
-        background-position-y: 25%;
-        background-size: cover;
-        height: 50rem;
-        z-index: 0;
-        @media (max-width: 48rem) {
-            background-position: center;
-            height: 30rem;
-        }
-        
-        &::after {
-            content: "";
-            background-color: rgba(0, 0, 0, 0.3);
-            position: absolute;
+.brandWhole {
+    #brand{
+        background-color: #9aa7ac;
+
+        .brandImg {
+            background-image: url('../../public/img/compImg/brand1.jpg');
+            background-repeat: no-repeat;
+            background-position-y: 25%;
+            background-size: cover;
+            z-index: 0;
+
             top: 0; height: 100%;
             left: 0; width: 100%;
-            z-index: 1;
-        }
 
-        .brandContent {
-            position: relative;
-            z-index: 2;
-
-            .reusableBtn a:hover {
-                background-color: #ffffff;
-                color: black !important;
+    
+            @media (max-width: 48rem) {
+                background-position: center;
+                height: 30rem;
             }
-        }
+    
+            &::after {
+                content: "";
+                background-color: rgba(0, 0, 0, 0.3);
+                position: absolute;
+                top: 0;
+                height: 100%;
+                left: 0;
+                width: 100%;
+                z-index: 1;
+            }
+    
+            .brandContent {
+                position: relative;
+                z-index: 2;
+    
+                h2 {
+                    font-size: 3rem;
+                    font-weight: 900;
+                }
 
-        
+                .brandBox {
+                    transform: translateY(150%);
+                }
+    
+                .reusableBtn a:hover {
+                    background-color: #ffffff;
+                    color: black !important;
+                }
+            }
+    
+    
+        }
     }
+
 }
 
 #review {
@@ -245,9 +300,11 @@ li {
 .swiper {
     overflow: hidden;
     padding: 50px 35px !important;
+
     .swiper-wrapper {
         display: flex;
-        .swiper-slide { 
+
+        .swiper-slide {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -258,12 +315,19 @@ li {
             }
         }
     }
+
     .swiper-scrollbar-horizontal {
         height: 2px;
         bottom: 0;
         left: 0;
         right: 0;
         width: 100%;
+    }
+}
+
+#event1 {
+    .col-5 > img {
+        border-radius: 3rem;
     }
 }
 

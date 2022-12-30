@@ -4,10 +4,13 @@ import EventTitle from './reusable/EventTitle';
 function EventOne(props) {
   return (
     <section id='event1' className='sectionSpace'>
-      <EventTitle type={props.sort}></EventTitle>
+      <div className='pb-5'>
+        <EventTitle type={props.sort}></EventTitle>
+      </div>
       <div className="container">
         <div className="row">
           <div className="col-6 text-end">
+            {/* 멘트 고치기 */}
             <strong>브링그린 제품을 사용했던 고객들을 대상으로 진행되는 이벤트 입니다.</strong>
             <p>
               올리브영 오프라인 매장에서

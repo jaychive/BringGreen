@@ -8,9 +8,23 @@ import EventOne from './component/EventOne';
 import EventTwo from './component/EventTwo';
 import Products from './component/Products';
 
+import axios from 'axios';
+import { useState ,useEffect } from 'react';
+
 
 
 function App() {
+
+  const sendRequest = async() => {
+    const response = await axios.get('http://localhost:8080');
+    console.log(response);
+    console.log(response.data);
+  };
+
+  useEffect(()=>{
+    sendRequest();    
+  });
+
   return (
     <div className="App">
       <Header></Header>

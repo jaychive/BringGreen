@@ -1,13 +1,13 @@
-# 싱글페이지를 리액트로 구현하기
-   네비게이션 (react-bootstrap ) / 스와이퍼 ( swiper ) / 나의 소개 ( aos ) /  사전인터뷰(폴더형식) / 면접제안 ( react-bootstrap ) / 하단
-# 리액트 설치 플러그인
-  axios / react-bootstrap / swiper
-## 20221226
-* scrollSpy 네비게이션 연결 완료
-* 로고 세팅
-* 재사용 컴포넌트(Btn.js, EventTitle.js, Title.js 등) DB용 json 파일 제작 후 props 이용하여 세팅
-* youtube iframe 삽입
+# Bring Green 기획 (분석)
+![광고01_페이지_1](https://user-images.githubusercontent.com/111237326/211586330-fa831f90-9118-48c9-b3a1-5f89aa77ae39.jpg)
+![광고01_페이지_2](https://user-images.githubusercontent.com/111237326/211586345-ec5edbd2-ae73-413a-9781-d04c5dca8f63.jpg)
+![광고01_페이지_3](https://user-images.githubusercontent.com/111237326/211586347-337a550b-d9d2-411e-8ee9-3747e5011e49.jpg)
+![광고01_페이지_4](https://user-images.githubusercontent.com/111237326/211586351-53729ecd-0819-44fa-87fd-8e92afb5de32.jpg)
 
+## Persona
+![UXUI콘텐츠기획_황정연_9월28일](https://user-images.githubusercontent.com/111237326/211586824-7a3d202f-5230-4bac-9add-af7c88cdaab4.jpg)
+
+# 진행 과정
 ## 20221227
 * 이미지 파일 img 폴더에 삽입
 

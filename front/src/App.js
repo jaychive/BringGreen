@@ -8,22 +8,9 @@ import EventOne from './component/EventOne';
 import EventTwo from './component/EventTwo';
 import Products from './component/Products';
 
-import axios from 'axios';
-import { useState ,useEffect } from 'react';
-
 
 
 function App() {
-
-  const sendRequest = async() => {
-    const response = await axios.get('http://localhost:8080');
-    console.log(response);
-    console.log(response.data);
-  };
-
-  useEffect(()=>{
-    sendRequest();    
-  });
 
   return (
     <div className="App">
@@ -43,11 +30,11 @@ function App() {
 
 const Footer = () =>{
   return(
-    <footer className="py-5 border-top">
-      <ul className="d-flex justify-content-center">
-        <li><a href="#none">git</a></li>
-        <li><a href="#none">instagram</a></li>
-        <li><a href="#none">notion</a></li>
+    <footer id='footer' className="py-5 border-top">
+      <ul className="d-flex justify-content-center mb-0">
+        <li><a href="#none">GITHUB</a></li>
+        <li><a href="#none">INSTAGRAM</a></li>
+        <li><a href="#none">NOTION</a></li>
       </ul>
     </footer>
   )

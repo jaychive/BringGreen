@@ -7,7 +7,7 @@ function Main(props) {
       <div className="mainImg">
         <div className="mainContent h-100">
           <div className="logoImgBox mx-auto pb-5">
-            <img src="/img/seo/logo-black.png" className="img-fluid w-100" alt="logo" />
+            <img src={process.env.PUBLIC_URL + '/img/seo/logo-black.png'} className="img-fluid w-100" alt="logo" />
           </div>
           <p className='py-3'>Tea Tree Soothing Lotion Bar PLUS+</p>
           <strong className='pb-3'>Release Event</strong>

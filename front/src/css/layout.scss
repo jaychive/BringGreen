@@ -32,7 +32,8 @@ strong {
     --swiper-theme-color: #105220;
 
     a {
-        color: black
+        color: black;
+        font-weight: 600;
     }
 
     a:hover {
@@ -66,12 +67,17 @@ strong {
     #hd {
         background-color: white;
         filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3));
+        padding: 0.5rem 1rem;
+        @media (min-width:48rem) {
+            padding: 1rem 3rem;
+        }
 
         &.scroll {
             // background-color: rgba(0,0,0,.5);
 
             a {
                 color: rgb(0, 0, 0);
+                font-weight: 600;
             }
 
             h1 svg {
@@ -149,7 +155,7 @@ strong {
 
 .titleSpace {
     font-size: 3rem;
-    padding-top: 3rem;
+    padding-top: 9rem;
     font-weight: 900;
 }
 
@@ -221,6 +227,19 @@ strong {
     }
 }
 
+#new {
+    .container {
+        padding: 7rem 0;
+        .col-4 {
+            img {
+                width: 18rem;
+                height: 18rem;
+                box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.15);
+            }
+        }
+    }
+}
+
 .brandWhole {
     #brand{
         background-color: #9aa7ac;
@@ -259,6 +278,8 @@ strong {
                 h2 {
                     font-size: 3rem;
                     font-weight: 900;
+                    padding-top: 7rem;
+                    text-align: center;
                 }
 
                 .brandBox {
@@ -281,20 +302,35 @@ strong {
     .reviewBox {
         img {
             border-radius: 3rem;
+            box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.15);
         }
     }
 }
 
 #plus {
-    .dotCircle {
-        width: 16rem;
-        height: 16rem;
-        border: 5px dotted #105220;
-        border-radius: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .container {
+        padding: 7rem 0;
+        .dotCircle {
+            width: 18rem;
+            height: 18rem;
+            background: linear-gradient(130.66deg, #A5EFB8 14.62%, #8BC7E5 85.1%);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.15);
+            h4 {
+                font-size: 2rem;
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+            }
+            .descPhr {
+                font-weight: 500;
+                color: white;
+            }
+        }
     }
+
 }
 
 .swiper {
@@ -329,6 +365,33 @@ strong {
     .col-5 > img {
         border-radius: 3rem;
     }
+    .col-6{
+        ul li {
+            font-size: 30px;
+            font-weight: 400;
+            white-space: nowrap;
+            padding: 0.5rem 0;
+            span {
+                font-size: 40px;
+                font-weight: 700;
+            }
+        }
+        p {
+            color: #5f5f5f;
+            font-size: 18px;
+            white-space: nowrap;
+        }
+    }
+}
+
+#eventform {
+    .MuiFormControl-root{
+        margin: 1rem 0;
+    }
+    input {
+        padding: 1rem 2rem;
+        width: 20rem;
+    }
 }
 
 #others {
@@ -336,6 +399,20 @@ strong {
         background-color: #105220;
         color: white !important;
     }
+}
+
+#footer {
+    background-color: #105220;
+    li{
+        padding: 0 1rem;
+        a {
+            font-size: 15px;
+            font-weight: 300;
+            text-decoration: none;
+            color: white;
+        }
+    }
+
 }
 
 .quickIcon {
